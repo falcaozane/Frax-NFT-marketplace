@@ -116,7 +116,7 @@ export default function NFTPage() {
                     <p>Description: {item?.description}</p>
                   </div>
                   <div className="text-xl font-bold text-orange-600">
-                    <p>Price: {item?.price} BFT</p>
+                    <p>Price: {item?.price} Fraxeth</p>
                   </div>
                   <div className="flex text-xl font-bold text-orange-600 items-center">
                     <p>Seller: </p><p className="text-sm mx-2">{item?.seller}</p>
