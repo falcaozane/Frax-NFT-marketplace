@@ -76,7 +76,7 @@ export default function Profile() {
                 </div>
                 <div>
                   <h2 className="text-xl font-bold text-gray-800">Total Value:</h2>
-                  <p className="text-xl font-bold text-gray-800">{totalPrice} ETH</p>
+                  <p className="text-xl font-bold text-gray-800">{totalPrice} Celo</p>
                 </div>
               </div>
               <div className="mt-10">
