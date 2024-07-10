@@ -33,10 +33,10 @@ export default function Header() {
       const network = await provider.getNetwork();
       console.log(network)
       const chainID = network.chainId;
-      const celo = "44787";
+      const frax = "2522";
 
-      if (chainID.toString() !== celo) {
-        alert("Please switch your MetaMask to Celo network");
+      if (chainID.toString() !== frax) {
+        alert("Please switch your MetaMask to Frax network");
         return;
       }
     } catch (error) {
