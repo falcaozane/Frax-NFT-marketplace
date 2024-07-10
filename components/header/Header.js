@@ -33,10 +33,10 @@ export default function Header() {
       const network = await provider.getNetwork();
       console.log(network)
       const chainID = network.chainId;
-      const frax = "2522";
+      const celo = "44787";
 
-      if (chainID.toString() !== frax) {
-        alert("Please switch your MetaMask to fraxtal network");
+      if (chainID.toString() !== celo) {
+        alert("Please switch your MetaMask to Celo network");
         return;
       }
     } catch (error) {
@@ -71,7 +71,7 @@ export default function Header() {
         </nav>
         <button
           className={`px-4 py-2 rounded-md flex items-center ${
-            isConnected ? "bg-green-500 cursor-not-allowed" : "bg-red-500 hover:bg-red-600"
+            isConnected ? "bg-red-700 cursor-not-allowed" : "bg-red-500 hover:bg-red-600"
           }`}
           onClick={connectWallet}
         >
@@ -79,7 +79,7 @@ export default function Header() {
             <>{userAddress?.slice(0, 8)}...</>
           ) : (
             <>
-              <SiWalletconnect className='mx-1' />
+              <SiWalletconnect className='md:mr-4' />
               <span className='hidden md:inline-block'>Connect Wallet</span>
             </>
           )}
