@@ -129,7 +129,7 @@ export default function SellNFT() {
             </div>
             <div className="mb-6">
               <label className="block text-left text-lg font-bold mb-2 text-orange-600">
-                Price (in Celo) <span className="text-red-600 text-base">*</span>
+                Price (in FraxETH) <span className="text-red-600 text-base">*</span>
               </label>
               <input
                 type="number"
